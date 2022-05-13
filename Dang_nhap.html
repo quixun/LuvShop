@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        .actionForm {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 50px;
+        }
+        .actionForm input[type="text"],
+        .actionForm input[type="password"]
+        {
+        padding: 10px;
+        border: 1px solid #F08080;
+        border-radius: 8px;
+        width: 100%;
+        }
+        .actionForm button[type="submit"] {
+        padding: 12px;
+        background: #FF69B4;
+        color: #fff;
+        border: 5px double whitesmoke;
+        outline: 0;
+        width: 300px;
+        border-radius: 25px;
+        }
+        .actionForm button[type="submit"]:hover{
+            background: #f53677;
+        }
+        h1{ 
+            border:10px ridge white;
+            color: #87CEFA;
+            text-align:center;
+        }
+        h1:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: auto; 
+            right: 0;
+            width: 0;
+            height: 7%;
+            background-color: #FF69B4;
+            transition: .5s;
+            z-index: -1;
+          }
+          h1:hover:before {
+            width: 100%;
+            left: 0;
+            right: auto;
+          }
+          .anh{
+            margin-left: 600px;
+          }
+        </style>
+        <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="Favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+<title> Luv Shop </title>
+
+</head>
+
+<body>
+<h1>Trang Đăng Nhập</h1><br>
+
+<div class="anh"><img src="images.png" alt=""></div>
+
+<form class="actionForm">
+
+<input type="text" placeholder="Tên Đăng Nhập" name="acc"/><br><br>    
+
+<input type="password" placeholder="Mật khẩu" name="password"><br><br>
+
+<button type="submit">Đăng Nhập </button><br><br>
+<label>Bạn Chưa Có Tài Khoản | Đăng kí <a href="Dang_ki.html" style="color:#f53677;font-size: 23px;">tại đây</a></label>
+</form>
+
+</body>
+
+</html>

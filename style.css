@@ -1,0 +1,386 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.link_top {
+    margin-left: 70px;
+}
+.home{
+    margin:280px 0;
+    margin-left: 95%;
+    position: fixed;
+    z-index: 3;
+    font-size:50px;
+    transition: 1s ease-out;
+}
+.home:hover{
+    transform: rotate(1turn);
+}
+.thanh_top {
+    padding-left: 30px;
+    background-color: #FFCCFF;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.thanh_top a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-flex;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.thanh_top a:hover {
+    background-color: rgb(155,155,255);
+    color: red;
+    transition: color 0.9s, background-color 0.9s;
+}
+
+.thanh_top input {
+    height: 30px;
+    margin-left: 70px;
+}
+
+#logo_search {
+    margin-left: -30px;
+}
+
+.khoi_ao {
+    height: 60px;
+}
+
+.do_dien_tu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #FFCCFF;
+    padding: 10px 0;
+}
+
+.do_dien_tu li {
+    padding: 0 12px;
+    position: relative;
+    margin-right: 50px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.do_dien_tu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.do_dien_tu li a:hover {
+    color: red;
+}
+
+.laptop {
+    position: absolute;
+    width: 230px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.do_dien_tu li:hover .laptop {
+    visibility: visible;
+    top: 30px;
+}
+
+.phu_kien {
+    position: absolute;
+    width: 230px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.do_dien_tu li:hover .phu_kien {
+    visibility: visible;
+    top: 30px;
+}
+
+.hang_cu {
+    position: absolute;
+    width: 230px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.do_dien_tu li:hover .hang_cu {
+    visibility: visible;
+    top: 30px;
+}
+
+.danh_muc {
+    display: inline;
+}
+
+#usb {
+    transform: rotate(-90deg);
+}
+
+.container {
+    margin-top: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gui{
+    border-radius: 5px;
+    width: 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.gui:hover{
+    background-color: rgb(36, 208, 17);
+    color: #fff;
+}
+.gallery-display-area {
+    overflow: hidden;
+    height: 362px;
+    width: 724px;
+    margin: 0 auto;
+}
+
+.gallery-wrap {
+    width: 500%;
+    animation: slideShow 16s infinite;
+}
+
+.image {
+    float: left;
+    height: 362px;
+    width: 724px;
+    display: flow-root;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, right top, right bottom, form(transparent), to rgba(255, 255, 255, 0.3));
+}
+
+@keyframes slideShow {
+    20% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: -100%;
+    }
+    40% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    60% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -300%;
+    }
+    80% {
+        margin-left: -300%;
+    }
+    90% {
+        margin-left: -400%;
+    }
+    100% {
+        margin-left: -400%;
+    }
+} 
+
+.poster img {
+    width: 100%;
+    height: 130px;
+}
+
+.wrapper {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.headline {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h3 {
+    font-size: 18px;
+    border: 1px solid #bebebe;
+    color: #555;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold 600px;
+    text-transform: uppercase;
+}
+
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+ul.products li .product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb {
+    display: block;
+}
+
+ul.products li .product-top .product-thumb img {
+    display: block;
+    z-index: 1;
+    width: 280px;
+    height: 280px;
+}
+
+ul.products li:hover .product-top .product-thumb img {
+    filter: opacity(95%);
+}
+
+ul.products li .product-top a.buy-now {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 10px 0px;
+    position: absolute;
+    width: 280px;
+    transition: 0.25s ease-in-out;
+    bottom: -50px;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now {
+    bottom: 0px;
+}
+
+ul.products li .product-info {
+    padding: 15px 0;
+}
+
+ul.products li .product-info a {
+    display: block;
+    text-decoration: none;
+}
+
+ul.products li .product-info a.product-cat {
+    font-size: 11px;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    padding: 3px 0px;
+}
+
+ul.products li .product-info a.product-name {
+    color: #334862;
+    padding: 3px 0px;
+    width: 280px;
+}
+
+ul.products li .product-info a.product-price {
+    color: #111;
+    padding: 3px 0px;
+    font-weight: 600;
+}
+
+.noi_dung {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.hoi_dap {
+    border: 5px outset thistle;
+    height: 100px;
+}
+
+.box-noi-dung {
+    margin-top: 15px;
+}
+
+.box-noi-dung input {
+    margin-left: 10px;
+    width: 95%;
+    height: 35px;
+    border: 3px outset;
+}
+
+.box-noi-dung i button {
+    color: white;
+    height: 30px;
+    background-color: lightseagreen;
+}
+
+footer {
+    max-width: 1800px;
+    margin: 100px auto 50px 10px;
+    height: auto;
+}
+
+.footer-top {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-top div {
+    margin-left: 50px;
+}
+
+.bao_hanh a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.pt_thanhtoan {
+    max-width: 100%;
+}
+
+.content {
+    text-decoration: none;
+    color: #111;
+}
+
+h6 {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
