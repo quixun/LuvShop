@@ -10,7 +10,7 @@
     margin-left: 70px;
 }
 .home{
-    margin:280px 0;
+    bottom: 40px;
     margin-left: 95%;
     position: fixed;
     z-index: 3;
@@ -27,6 +27,7 @@
     position: fixed;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     z-index: 3;
 }
 
@@ -215,7 +216,7 @@
 }
 
 .wrapper {
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
