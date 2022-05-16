@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"/>
     <script src="https://kit.fontawesome.com/0634ae970e.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/Favicon/favicon.ico">
     <title>Luv Shop</title> 
 </head>
 
 <body>
-    <div class="home">
-        <a href="#"><i style="color:#FFCCFF;" class="fa-solid fa-spin fa-fan"></i></a>
-    </div>
-    
     <div class="thanh_top">
         <img src="luv.png" style="height: 50px; margin: 2px 50px;">
         <div>
@@ -242,6 +240,22 @@
                             <a href="" class="product-cat">Đã bán 134</a>
                             <a href="" class="product-name">bộ ấm trà đá bạch ngọc tự nhiên</a><br><br>
                             <div class="product-price"><b>1.000.000 ₫</b></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thumb">
+                                <img src="9.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Đã bán 105</a>
+                            <a href="" class="product-name">Bộ ấm trà xanh ngọc đá pakistan</a><br><br>
+                            <div class="product-price"><b>1.600.000 ₫</b></div>
                         </div>
                     </div>
                 </li>
@@ -576,6 +590,23 @@
                         <div class="product-info">
                             <a href="" class="product-cat">Quả Cầu Phong Thủy</a>
                             <a href="" class="product-name">Quả cầu phong thủy đá canxit trắng - 10cm
+                            </a><br>
+                            <div class="product-price"><b>500.000 ₫
+                            </b></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="" class="product-thumb">
+                                <img src="qc_20.jpg" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="" class="product-cat">Quả Cầu Phong Thủy</a>
+                            <a href="" class="product-name">Quả Cầu Phong Thủy Thạch Anh Trắng
                             </a><br>
                             <div class="product-price"><b>500.000 ₫
                             </b></div>
@@ -984,10 +1015,26 @@
                     <h6>Tuyển dụng</h6>
                 </a>
             </div>
-
         </div>
+        <script>
+            // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+            var offset = 500;
+            // thời gian di trượt 0.75s ( 1000 = 1s )
+            var duration = 1000;
+            $(function(){
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > offset)
+            $('#top-up').fadeIn(duration);else
+            $('#top-up').fadeOut(duration);
+            });
+            $('#top-up').click(function () {
+            $('body,html').animate({scrollTop: 0}, duration);
+            });
+            });
+            </script>
+            <div title="Về đầu trang" id="top-up">
+                <a href=""><i style="color:#FFCCFF;" class="fa-solid fa-spin fa-fan"></i></a>
+            </div>
     </footer>
-
 </body>
-
 </html>
