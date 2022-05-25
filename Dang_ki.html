@@ -13,24 +13,25 @@
                 box-sizing: border-box;
                 font-family:sans-serif;
             }
+            .actionForm {
+                max-width: 600px;
+                margin: 0 auto;
+                margin-top: 150px;
+            }
             section {
                 position: relative;
                 height: 100vh;
                 width: 100%;
                 display: flex;
                 background-color: #E6E6FA;
+
             }
             .tong {
                 border-width: 10px;
                 border-style: ridge;
                 border-color: cornsilk;
                 font-size: 37px;
-            }
-            section .trai {
-                position: relative;
-                height: 100%;
-                width: 60%;
-
+                position:top;
             }
             p:before {
                 content: "";
@@ -62,23 +63,20 @@
               .button:hover{
                   background-color:#f53677;
               }
+              section .phai{
+                position: relative;
+                background-image: url(anni.jpg);
+                background-size: cover;
+                width: 100%;
+              }
         </style>
     </head>
-    <body>
-        <div class="tong" style="text-align: center; color:#A9A9A9">
+    <div class="tong" style="text-align: center; color:#A9A9A9">
             <p>Tạo tài khoản của bạn</p>
         </div>
-    </body>
 </html>
-<section>
-
-    <div class="trai"><br><br><br><br><br><div style="text-align:center;font-size:30px;color:silver">Bạn chỉ cần có một tài khoản</div><br>
-        <div style="color:red;text-align:center;font-size:20px">Một tài khoản miễn phí giúp bạn mua sắm và nhận nhiều ưu đãi ở Luv Shop</div><br><br><br><br><br><br>
-        <div style="text-align:center;font-size:30px;color:silver">Mang theo tất cả nội dung bên bạn</div><br><br><br>
-        <div style="color:red;text-align: center;font-size: 20px;">Phong thủy trao tay, vận may cải thiện</div>
-    </div>
-
-    <div style="background-color:#E6E6FA">
+<form class="actionForm">
+    <div class="phai" style="background-color:#E6E6FA" >
         <div>
             <span>
                 <b>Tên Đăng Nhập</b>
@@ -193,10 +191,11 @@
             <label style="color: blue;">Điều khoản dịch vụ</label>
             và
             <label style="color: blue;">Chính sách bảo mật</label>
-            của Shop</label><br><br>
+            </label><br><br>
         <button class="button" type="submit">Đăng Kí</button><br><br>
         <br>
         <a href="Dang_nhap.html" style="color: blue;">Quay lại Đăng Nhập
         </a>
     </div>
-</div></div></section>
+</div></div>
+</section>
