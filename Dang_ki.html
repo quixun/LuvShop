@@ -14,17 +14,31 @@
                 font-family:sans-serif;
             }
             .actionForm {
-                max-width: 600px;
+                max-width: 400px;
                 margin: 0 auto;
-                margin-top: 150px;
+                margin-top: 50px;
             }
-            section {
+            .actionForm input[type="text"],
+            .actionForm input[type="email"],
+            .actionForm input[type="password"]
+            {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #F08080;
+            border-radius: 8px;
+            width: 100%;
+            }
+            .actionForm input[type="radio"]{
+                margin-left: 30px;
+            }
+            body {
                 position: relative;
-                height: 100vh;
-                width: 100%;
-                display: flex;
                 background-color: #E6E6FA;
-
+                background-image: url(hinh-nen-phong-thuy-may-man-cho-pc_114056012.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
             }
             .tong {
                 border-width: 10px;
@@ -33,26 +47,11 @@
                 font-size: 37px;
                 position:top;
             }
-            p:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0; 
-                right: auto;
-                width: 0;
-                height: 7%;
-                background-color: #696969;
-                transition: .5s;
-                z-index: -1;
-              }
-              p:hover:before {
-                width: 100%;
-                left: auto;
-                right: 0;
-              }
-              .button{
+              .actionForm input[type="button"]{
                 padding: 12px;
                 background: #FF69B4;
+                margin-top: 30px;
+                margin-left: 20px;
                 color: #fff;
                 border: 4px inset white;
                 outline: 0;
@@ -60,142 +59,197 @@
                 font-size: 20px;
                 border-radius: 25px;
               }
-              .button:hover{
+              .actionForm input[type="button"]:hover{
                   background-color:#f53677;
               }
-              section .phai{
-                position: relative;
-                background-image: url(anni.jpg);
-                background-size: cover;
-                width: 100%;
+              label{
+                  color: dimgrey;
+                  font-size: 17px;
+                  background-color:#fff;
+                  border: 1px solid #f53677;
+                  border-radius: 4px;
+                
+              }
+              select{
+                  border-radius:5px;
+                  border: 1px inset #F08080;
+                  margin-left: 20px;
+                  color: dimgrey;
               }
         </style>
     </head>
-    <div class="tong" style="text-align: center; color:#A9A9A9">
+    <body>
+        <div class="tong" style="text-align: center; color:#fff">
             <p>Tạo tài khoản của bạn</p>
         </div>
+        <form class="actionForm">
+            <input type="text" placeholder="Tên Đăng Nhập" name="acc"/><br><br> 
+            <input type="password" placeholder="Nhập Mật Khẩu" name="pass"/><br><br>
+            <input type="password" placeholder="Nhập Lại Mật Khẩu" name="repass"/><br><br>
+            <label for="">Sinh Nhật</label><br><br> 
+            <select name="" id="">
+                <option value="">Ngày</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+            <select name="" id="">
+                <option value="">Tháng</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+            </select>
+            <select name="" id="">
+                <option value="">Năm</option>
+                <option value="">1920</option>
+                <option value="">1921</option>
+                <option value="">1922</option>
+                <option value="">1923</option>
+                <option value="">1924</option>
+                <option value="">1925</option>
+                <option value="">1926</option>
+                <option value="">1927</option>
+                <option value="">1928</option>
+                <option value="">1929</option>
+                <option value="">1930</option>
+                <option value="">1931</option>
+                <option value="">1932</option>
+                <option value="">1933</option>
+                <option value="">1934</option>
+                <option value="">1935</option>
+                <option value="">1936</option>
+                <option value="">1937</option>
+                <option value="">1938</option>
+                <option value="">1939</option>
+                <option value="">1940</option>
+                <option value="">1941</option>
+                <option value="">1942</option>
+                <option value="">1943</option>
+                <option value="">1944</option>
+                <option value="">1945</option>
+                <option value="">1946</option>
+                <option value="">1947</option>
+                <option value="">1948</option>
+                <option value="">1949</option>
+                <option value="">1950</option>
+                <option value="">1951</option>
+                <option value="">1952</option>
+                <option value="">1953</option>
+                <option value="">1954</option>
+                <option value="">1955</option>
+                <option value="">1956</option>
+                <option value="">1957</option>
+                <option value="">1958</option>
+                <option value="">1959</option>
+                <option value="">1960</option>
+                <option value="">1961</option>
+                <option value="">1962</option>
+                <option value="">1963</option>
+                <option value="">1964</option>
+                <option value="">1965</option>
+                <option value="">1966</option>
+                <option value="">1967</option>
+                <option value="">1968</option>
+                <option value="">1969</option>
+                <option value="">1970</option>
+                <option value="">1971</option>
+                <option value="">1972</option>
+                <option value="">1973</option>
+                <option value="">1974</option>
+                <option value="">1975</option>
+                <option value="">1976</option>
+                <option value="">1977</option>
+                <option value="">1978</option>
+                <option value="">1979</option>
+                <option value="">1980</option>
+                <option value="">1981</option>
+                <option value="">1982</option>
+                <option value="">1983</option>
+                <option value="">1984</option>
+                <option value="">1985</option>
+                <option value="">1986</option>
+                <option value="">1987</option>
+                <option value="">1988</option>
+                <option value="">1989</option>
+                <option value="">1990</option>
+                <option value="">1991</option>
+                <option value="">1992</option>
+                <option value="">1993</option>
+                <option value="">1994</option>
+                <option value="">1995</option>
+                <option value="">1996</option>
+                <option value="">1997</option>
+                <option value="">1998</option>
+                <option value="">1999</option>
+                <option value="">2000</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+            </select><br><br>
+            <label for="">Giới Tính</label><br><br>
+            <input type="radio" id="" name="gioitinh">&ensp;<label for="" >Nam</label> 
+            <input type="radio" id="" name=gioitinh>&ensp;<label for="">Nữ</label><br><br>
+            <input type="text" name="" id="" placeholder="Số Điện Thoại" value="+84"><br><br>
+            <input type="email" name="" id="" placeholder="Địa Chỉ Email"><br><br>
+            <input type="checkbox" name="" id=""><span style="color: blue;font-size: 20px;">Tôi đồng ý với các của shop</span><br><br><br>
+            <input type="button" value="Đăng Kí">
+            
+        </form>
+    </body>
+    
 </html>
-<form class="actionForm">
-    <div class="phai" style="background-color:#E6E6FA" >
-        <div>
-            <span>
-                <b>Tên Đăng Nhập</b>
-            </span><br>
-            <input type="text" name="" placeholder="Tên Đăng Nhập">
-            <br>
-        </div>
-        <br>
-        <span>
-            <b>Tạo mật khẩu</b>
-        </span><br>
-        <input type="text" name="" placeholder="Nhập mật khẩu"><br><br>
-        <span>
-            <b>Xác nhận mật khẩu của bạn</b>
-        </span><br>
-        <input type="text" name="" placeholder="Nhập lại mật khẩu"><br>
-        <span><br>
-            <b>Sinh nhật</b>
-        </span><br>
-        <select>
-            <option value="">Ngày</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-            <option value="">6</option>
-            <option value="">7</option>
-            <option value="">8</option>
-            <option value="">9</option>
-            <option value="">10</option>
-            <option value="">11</option>
-            <option value="">12</option>
-            <option value="">13</option>
-            <option value="">14</option>
-            <option value="">15</option>
-            <option value="">16</option>
-            <option value="">17</option>
-            <option value="">18</option>
-            <option value="">19</option>
-            <option value="">20</option>
-            <option value="">21</option>
-            <option value="">22</option>
-            <option value="">23</option>
-            <option value="">24</option>
-            <option value="">25</option>
-            <option value="">26</option>
-            <option value="">27</option>
-            <option value="">28</option>
-            <option value="">29</option>
-            <option value="">30</option>
-            <option value="">31</option>
-        </select>
-                <select>
-                    <option value="">Tháng</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                </select>
-        <select>
-            <option value="">1990</option>
-            <option value="">1991</option>
-            <option value="">1992</option>
-            <option value="">1993</option>
-            <option value="">1994</option>
-            <option value="">1995</option>
-            <option value="">1996</option>
-            <option value="">1997</option>
-            <option value="">1998</option>
-            <option value="">1999</option>
-            <option value="">2000</option>
-            <option value="">2001</option>
-            <option value="">2002</option>
-            <option value="">2003</option>
-            <option value="">2004</option>
-            <option value="">2005</option>
-            <option value="">2006</option>
-            <option value="">2007</option>
-            <option value="">2008</option>
-            <option value="">2009</option>
-            <option value="">2010</option>
-            <option value="">2011</option>
-            <option value="">2012</option>
-            <option value="">2013</option>
-            <option value="">2014</option>
-            <option value="">2015</option>
-            <option value="">2016</option>
-            <option value="">2017</option>
-            <option value="">2018</option>
-            <option value="">2019</option>
-            <option value="">2020</option>
-            <option value="">2021</option>
-            <option value="">2022</option>
-        </select><br><br>
-        <b>Giới tính</b><br>
-        <input type="radio" name="tim" id=""><label>Nam</label>&emsp;<input type="radio" name="tim" id=""><label>Nữ</label><br><br>
-        <b>Điện thoại di động</b><br>
-        <input type="email" value="+84"><br><br>
-        <b>Địa chỉ email </b><br>
-        <input type="text"><br><br>
-        <br>
-        <input type="checkbox"><label>Tôi đồng ý với
-            <label style="color: blue;">Điều khoản dịch vụ</label>
-            và
-            <label style="color: blue;">Chính sách bảo mật</label>
-            </label><br><br>
-        <button class="button" type="submit">Đăng Kí</button><br><br>
-        <br>
-        <a href="Dang_nhap.html" style="color: blue;">Quay lại Đăng Nhập
-        </a>
-    </div>
-</div></div>
-</section>
+
+
