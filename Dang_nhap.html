@@ -1,93 +1,134 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        * {
-        margin: 0;
-        padding: 0;
-        }
-        .actionForm {
-        max-width: 600px;
-        margin: 0 auto;
-        margin-top: 150px;
-        }
-        .actionForm input[type="text"],
-        .actionForm input[type="password"]
-        {
-        padding: 15px;
-        border: 1px solid #F08080;
-        border-radius: 8px;
-        width: 100%;
-        }
-        .actionForm button[type="submit"] {
-        padding: 12px;
-        background: #FF69B4;
-        color: #fff;
-        border: 5px double whitesmoke;
-        outline: 0;
-        width: 300px;
-        border-radius: 13px;
-        position: absolute;
-        transform:translate(50%);
-        }
-        .actionForm button[type="submit"]:hover{
-            background: #f53677;
-        }
-        h1{ 
-            border:10px ridge white;
-            color: #87CEFA;
-            text-align:center;
-        }
-        h1:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: auto; 
-            right: 0;
-            width: 0;
-            height: 7%;
-            background-color: #FF69B4;
-            transition: .5s;
-            z-index: -1;
-          }
-          h1:hover:before {
-            width: 100%;
-            left: 0;
-            right: auto;
-          }
-          .anh{
-            margin-left: 600px;
-          }
-          .sign-in{
-            margin:20px;
-            color: #fff;
-          }
-          .nen_dang_nhap{
-            background-image: url(hinh-nen-phong-thuy-may-man-cho-pc_114056012.jpg);
-            height: 100%;
-            background-size: cover;
-            margin: 0;
-          }
-        </style>
-        <link rel="icon" type="image/x-icon" href="/Favicon/favicon.ico">
-<title> Luv Shop </title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--favicon-->
+  <title>Đăng Nhập</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      outline: none;
+      font-family: "Poppins";
+    }
+    a{
+      text-decoration: none;
+    }
+    .container{
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(thumb-1920-1091283.jpg);
+      background-size: cover;
+    }
+    .form-login{
+      width: 300px;
+      height: 500px;
+      border: 2px solid silver;
+      border-radius: 10px;
+      padding: 40px 30px;
+    }
+    .form-login h1{
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    .form-login button{
+      height:35px;
+      width: 100%;
+      margin-bottom: 30px;
+      background:linear-gradient(to bottom right,red,pink,white);
+      border: none;
+      color: #fff;
+      font-family:"Poppins",sans-serif;
+      border-radius: 5px;
+      background-size: 200%;
+    }
+    .form-login button:hover{
+      background-position: right;
+      width: 95%;
+    }
+    .form-text{
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .form-text input{
+      width: 100%;
+      height: 35px;
+      border:none;
+      border-bottom: 3px solid #ccc;
+      cursor: pointer;
+      padding-left: 12px;
+      border-radius: 5px;
+      outline: none;
+      background: transparent;
+      color: #ccc;
+    }
+    .form-text label{
+      position: absolute;
+      left:12px;
+      bottom: 12px;
+      transition:0.5s;
+      color: white;
+    }
+    .form-text label.focus{
+    transform: translateY(-45px);  
+    }
+  </style>
 </head>
-
-<body class="nen_dang_nhap">
-<h1 style="color: aliceblue;">Trang Đăng Nhập</h1><br>
-<div class="anh"><img src="images.png" alt=""></div>
-
-<form class="actionForm">
-
-<input type="text" placeholder="Tên Đăng Nhập" name="acc"/><br><br>    
-
-<input type="password" placeholder="Mật khẩu" name="password"><br><br>
-
-<button type="submit">Đăng Nhập </button><br><br>
-<p class="sign-in">Bạn Chưa Có Tài Khoản | Đăng kí <a href="Dang_ki.html" style="color:#f53677;font-size: 23px;">tại đây</a></p>
-</form>
-
+<body>
+  <div class="container">
+    <form class="form-login">
+      <h1>Đăng Nhập</h1>
+      <div class="form-text">
+        <label>Username</label>
+        <input type="text">
+      </div>
+      <div class="form-text">
+        <label>Password</label>
+        <input type="password">
+      </div>
+      <button>Đăng Nhập</button>
+      <span style="color:#fff">Bạn chưa có tài khoản? Đăng Ký <a style="color:red" href="Dang_ki.html">Tại đây</a></span>
+      <div></div><br>
+      <a style="color:red;" href="index.html">Quay Về Trang Chủ</a>
+    </form>
+  </div>
+  <script>
+    const formLogin = document.querySelectorAll('.form-text input')
+    const formLabel = document.querySelectorAll('.form-text label')
+    for(let i = 0;i<2;i++){
+      formLogin[i].addEventListener("mouseover",function(){
+        formLabel[i].classList.add("focus")
+      })
+      formLogin[i].addEventListener("mouseout",function(){
+        if(formLogin[i].value ==""){
+          formLabel[i].classList.remove("focus")
+        }
+      })
+    }
+  </script>
 </body>
-
 </html>
