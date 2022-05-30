@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0634ae970e.js" crossorigin="anonymous"></script>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon-->
+    <title>Giỏ Hàng</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            background: transparent;
+            
+        }
+        .product-items{
+            display: flex;
+            justify-content: space-between;
+            
+            background: transparent;
+            padding: 12px;
+        }
+        .product-item{
+            width: 19%;
+            background-color: #fff;
+            padding: 12px;
+            background: transparent;
+            text-align: center;
+        }
+        .product-item img{
+           
+            margin-bottom: 20px;
+            width: 100%;
+            height:60%;
+        }
+        .product-item-text{
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+        }
+        .product-item button{
+            margin-top: 12px;
+            height: 30px;
+            padding:0 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+        }
+        .product-item button:hover{
+            background-color:tomato;
+        }
+        /*---cart----*/
+        .cart{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .cart h2{
+            margin-bottom: 20px;
+
+        }
+        .cart table{
+            width: 100%;
+        }
+        .cart table thead tr th:first-child{
+            text-align: left;
+        }
+        .cart table tr td{
+            border-bottom: 1px solid #ddd;
+            padding: 12px 0;
+        }
+        .cart table thead tr th:last-child{
+            text-align: right;
+        }
+        .cart table tbody tr td:first-child{
+            text-align: right;
+        }
+        /*-----------*/
+        .cart{
+            position: fixed;
+            height: 100vh;
+            width: 400px;
+            right:0;
+            top:0;
+            background:linear-gradient(to bottom right,rgb(71, 71, 195),rgb(93, 190, 93),rgb(231, 102, 205));
+            padding:12px 20px;
+        }
+        .cart button{
+            margin-top: 12px;
+            height: 30px;
+            padding:0 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: tomato;
+        }
+        .cart-icon svg{
+            cursor:pointer;
+        }
+        body{
+            background-image: url(hinh-nen-laptop-hoa-sen_023803695.jpg);
+            background-size: cover;
+        }
+        .cart-icon{
+            height: 50px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;padding: 15px;">Những Sản Phẩm Bạn Đã Thêm Vào Giỏ Hàng</h1>
+    <section class="product">
+        <div class="container">
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="qc_12.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>290.000</span><sup>₫</sup></p>
+                        <h1 style="font-weight:bold; font-size: 18px;">Quả Cầu Phong Thủy Thủy Tinh Màu Vàng</h1>
+                    </div>
+                    <button>Mua Ngay</button>
+                </div>
+                <div class="product-item">
+                    <img src="5.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>300.000</span><sup>₫</sup></p>
+                        <h1 style="font-weight:bold; font-size: 18px;">Cây Tài Lộc đá Thạch Anh Hồng tự nhiên</h1>
+                    </div>
+                    <button>Mua Ngay</button>
+                </div>
+                <div class="product-item">
+                    <img src="n_5.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>970.000</span><sup>₫</sup></p>
+                        <h1 style="font-weight:bold; font-size: 18px;">Nhẫn Bạc Ý Đính Đá Alpanite và CZ Blue</h1>
+                    </div>
+                    <button>Mua Ngay</button>
+                </div>
+                <div class="product-item">
+                    <img src="4.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>199.000</span><sup>₫</sup></p>
+                        <h1 style="font-weight:bold; font-size: 18px;">Vòng mã não vân xanh, hàng đẹp, size 56-58mm</h1>
+                    </div>
+                    <button>Mua Ngay</button>
+                </div>
+                <div class="product-item">
+                    <img src="5.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>300.000</span><sup>₫</sup></p>
+                        <h1 style="font-weight:bold; font-size: 18px;">Cây Tài Lộc đá Thạch Anh Hồng tự nhiên</h1>
+                </div>
+                    <button>Mua Ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <h2>Xác Nhận Mua Hàng</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+<!--                     <tr>
+                        <td style="display:flex;align-items:center;"><img style="width:70px" src="1.jpg" alt="">Quả Cầu phong thủy hai dương xanh</td>
+                        <td><p><span>1.280.000</span><sup>₫</sup></p></td>
+                        <td><input style="width:30px;outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa</td>
+                    </tr>
+                    <tr>
+                        <td style="display:flex;align-items:center;"><img style="width:70px" src="2.jpg" alt="">Quả Cầu phong thủy hai dương xanh</td>
+                        <td><p><span>1.280.000</span><sup>₫</sup></p></td>
+                        <td><input style="width:30px;outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">Xóa</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div style="text-align:right" class="price-total">
+                <p style="font-weight: bold;">Tổng tiền: <span>0<sup>₫</sup></span></p>
+            </div>
+            <button>Thanh Toán</button>
+        </form>
+    </section>
+    <script>
+        const btn = document.querySelectorAll("button")
+        //console.log(btn)
+        btn.forEach(function(button,index){
+            button.addEventListener("click",function(envent){{ 
+                var btnItem = event.target
+                var product = btnItem.parentElement
+                var productImg = product.querySelector("img").src
+                var productName = product.querySelector("H1").innerText
+                var productPrice = product.querySelector("span").innerText
+                addcart(productPrice,productImg,productName)
+             }})
+        })
+        function addcart(productPrice,productImg,productName){
+            var addtr = document.createElement("tr")
+            var carItem = document.querySelectorAll("tbody tr")
+            for(var i=0;i<carItem.length;i++){
+                var productT = document.querySelectorAll(".title")
+                if(productT[i].innerHTML == productName){
+                    alert("Sản Phẩm này bạn đã chọn rồi")
+                    return;
+                }
+            }
+            var trcontent = '<tr><td style="display:flex;align-items:center;"><img style="width:70px" src="'+productImg+'" alt=""><span class="title">'+productName+'</span></td><td><p><span class="prices">'+productPrice +'</span><sup> ₫</sup></p></td><td><input style="width:30px;outline: none;" type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete">Xóa</span></td></tr>'
+            addtr.innerHTML = trcontent
+            var cartTable = document.querySelector("tbody")//lấy đường dẫn từ thẻ tbody
+            cartTable.append(addtr)//add các content vào tr
+            cartotal()
+            deleteCart()
+        }
+        //---------Tổng tiền-----
+        function cartotal(){
+            var carItem = document.querySelectorAll("tbody tr")
+            totalC = 0
+            for (var i=0;i<carItem.length;i++){
+                var inputValue = carItem[i].querySelector("input").value
+                var productPrice = carItem[i].querySelector(".prices").innerHTML
+                totalA = inputValue*productPrice*1000
+                totalC = totalC + totalA
+            }
+            var cartTotalA = document.querySelector(".price-total span") 
+            cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
+            inputchange()
+            
+        }
+        //--------------xóa------
+        function deleteCart(){
+            var carItem = document.querySelectorAll("tbody tr")
+            for(var i=0;i<carItem.length;i++){
+                var productT = document.querySelectorAll(".cart-delete")
+                productT[i].addEventListener("click",function(event){
+                    var cartDelete = event.target;
+                    var cartitemR = cartDelete.parentElement.parentElement
+                    cartitemR.remove()
+                    cartotal()
+                })
+            }
+        }
+        function inputchange(){
+            var carItem = document.querySelectorAll("tbody tr")
+            for(var i=0;i<carItem.length;i++){
+                var inoputValue = carItem[i].querySelector("input")
+                inoputValue.addEventListener("change",function(){
+                    cartotal()
+                })
+            }
+        }
+        const cartbtn = document.querySelector(".close")
+        const cartShow = document.querySelector(".cart-icon")
+        cartShow.addEventListener("click",function(){
+            document.querySelector(".cart").style.right = "0"
+        })
+    </script> 
+</body>
+    <!-- <div class="cart-icon">
+        <p> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg><span>0</span><sup>₫</sup>
+        </p>
+    </div> -->
+</html>

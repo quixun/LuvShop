@@ -67,7 +67,6 @@
 }
 
 .do_dien_tu li {
-    
     position: relative;
     margin-right: 50px;
     list-style: none;
@@ -281,23 +280,25 @@ ul.products li .product-top a.buy-now {
     text-transform: uppercase;
     text-align: center;
     display: block;
-    background-color: #446084;
-    color: #fff;
+    background-color: silver;
     padding: 10px 0px;
+    color: black;
     position: absolute;
     width: 280px;
     transition: 0.25s ease-in-out;
     bottom: -50px;
     opacity: 0.85;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 ul.products li:hover a.buy-now {
     bottom: 0px;
+    transition: 0.75s;
 }
 
 ul.products li .product-info {
     padding: 15px 0;
 }
-
 ul.products li .product-info a {
     display: block;
     text-decoration: none;
@@ -399,4 +400,9 @@ h6 {
 #top-up:hover {
     color: #333;
     transform:rotate(0deg);
+}
+img.tuvan{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
