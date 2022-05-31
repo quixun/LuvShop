@@ -41,8 +41,7 @@
       text-align: center;
       width: 100vw;
       height: 100vh;
-      background-image: url(thumb-1920-1091283.jpg);
-      background-size: cover;
+      background:linear-gradient(to bottom right,#F0FFF0,#F5FFFA,#F0FFFF);      
     }
     .form-login{
       width: 300px;
@@ -50,19 +49,23 @@
       border: 2px solid silver;
       border-radius: 10px;
       padding: 40px 30px;
+      background-color: lavenderblush;
+      border: 3px solid;
+    }
+    .items{
+      
     }
     .form-login h1{
       margin-bottom: 40px;
-      color: #fff;
+      color: red;
     }
     .form-login button{
       height:35px;
       width: 100%;
       margin-bottom: 30px;
-      background:linear-gradient(to bottom right,red,pink,white);
+      background:linear-gradient(to bottom right,#FFFF99,#FFCC99,#FF9999);
       border: none;
-      color: #fff;
-      font-family:"Poppins",sans-serif;
+      font-family: 'Courier New', Courier, monospace;
       border-radius: 5px;
       background-size: 200%;
     }
@@ -84,17 +87,22 @@
       border-radius: 5px;
       outline: none;
       background: transparent;
-      color: #ccc;
+      color: black;
     }
     .form-text label{
       position: absolute;
       left:12px;
       bottom: 12px;
       transition:0.5s;
-      color: white;
+      color: black;
     }
     .form-text label.focus{
     transform: translateY(-45px);  
+    }
+    .forrget{
+      margin-left: 160px;
+      padding-bottom: 25px;
+      color: red;
     }
   </style>
 </head>
@@ -103,15 +111,18 @@
     <form class="form-login">
       <h1>Đăng Nhập</h1>
       <div class="form-text">
-        <label>Username</label>
+        <label>Tên Đăng Nhập</label>
         <input type="text">
       </div>
       <div class="form-text">
-        <label>Password</label>
+        <label>Mật Khẩu</label>
         <input type="password">
       </div>
+      <div class="forrget">
+          <label>*Quên Mật Khẩu</label>
+      </div>
       <button>Đăng Nhập</button>
-      <span style="color:#fff">Bạn chưa có tài khoản? Đăng Ký <a style="color:red" href="Dang_ki.html">Tại đây</a></span>
+      <span>Bạn chưa có tài khoản? Đăng Ký <a style="color:red" href="Dang_ki.html">Tại đây</a></span>
       <div></div><br>
       <a style="color:red;" href="index.html">Quay Về Trang Chủ</a>
     </form>
