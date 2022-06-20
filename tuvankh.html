@@ -35,14 +35,148 @@
         }
         body {
             margin-left: 25px;
-            color: black;
-            background: linear-gradient(to top left,#E6E6FA,#D8BFD8,#FFDAB9,#DDA0DD);
+            color: white;
+            text-shadow: 0 0 12px lime,0 0 50px lime;
+            /*background: linear-gradient(to top left,#E6E6FA,#D8BFD8,#FFDAB9,#DDA0DD);*/
+            background: #333;
         }
+        section
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        background: transparent;
+    }
+    .bowl
+    {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+        border: 8px solid white;
+        transform-origin: bottom center;
+        animation: animate 5s linear infinite;
+    }
+    @keyframes animate
+    {
+        0%
+        {
+            filter: hue-rotate(0deg);
+            transform: rotate(0deg);
+        }
+        25%
+        {
+            transform: rotate(15deg);
+        }
+        50%
+        {
+            transform: rotate(0deg);
+        }
+        75%
+        {
+            transform: rotate(-15deg);
+        }
+        100%
+        {
+            filter: hue-rotate(360deg);
+
+            transform: rotate(0deg);
+        }
+    }
+    .bowl::before
+    {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 30px;
+        border: 12px solid slategrey;
+        border-radius: 50%;
+        box-shadow: 0 10px #222;
+    }
+    .bowl::after
+    {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 150px;
+        height: 80px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 50%;   
+    }
+    .liquid
+    {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background: #41c1fb;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+        filter: drop-shadow(0 0 80px #41c1fb);
+        transform-origin: top center;
+        animation: animateLiquid 5s linear infinite;
+    }
+    @keyframes animateLiquid
+    {
+        0% { 
+            transform: rotate(0deg);
+        }
+        25% { 
+            transform: rotate(-20deg);
+        }
+        50% { 
+            transform: rotate(0deg);
+        }
+        75% { 
+            transform: rotate(20deg);
+        }
+        100% { 
+            transform: rotate(0deg);
+        }
+    }
+    .liquid::before
+    {
+        content: '';
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        height: 20px;
+        background: #1fa4e0;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 80px #41c1fb);
+    }
+    .shadow
+    {
+        position: absolute;
+        top: calc(50% + 50px);
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 30px;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50%;
+    }
     </style>
 </head>
-<body class="mau">
+<body>
     <h1 style="text-align:center;">Tư Vấn Khách Hàng</h1>
-   <h4>1.Màu bản mệnh:</h4>
+    <section>
+        <div class="shadow"></div>
+     <div class="bowl">
+        <div class="liquid">
+
+        </div>
+     </div>
+    </section>
+    <h4>1.Màu bản mệnh:</h4>
 Màu bản mệnh được hiểu nôm na là màu sắc phong thủy gắn liền với sinh mệnh con người dựa trên quy luật ngũ hành. Bản mệnh được xác định kể từ thời điểm (năm sinh) mà con người ra đời và có năm loại bản mệnh tương ứng với 5 nguyên tố trong tự nhiên là: Mệnh Kim, Mộc, Thủy, Hỏa và Thổ. Những loại bản mệnh khác nhau sẽ có màu sắc đặc trưng khác nhau như:<br>
 •	Mệnh Kim (kim loại): màu sắc đại diện là màu trắng hoặc những màu ánh kim.<br>
 •	Mệnh Mộc (cây cỏ): màu sắc đại diện là màu xanh lá cây hoặc xanh lục.<br>
@@ -66,55 +200,29 @@ Nếu bạn mệnh hỏa thì ngài việc sử dụng các màu nóng như đ�
 <h4>6.	Màu tương sinh với mệnh Thổ (đất):</h4>
 Bạn có thể sử dụng các màu tượng trưng cho mệnh Thổ là màu cam, vàng hoặc nâu. Bạn cũng có thể kết hợp với các màu tương sinh trong ngũ hành như màu hồng, màu đỏ và màu tím (do Hỏa sinh Thổ). Việc kết hợp này sẽ đem đến cho bạn sự vững vàng, ổn định, tinh thần thoải mái trong sự nghiệp và cuộc sống.
 <br><img src="tv_5.jpg" alt="" class="tuvan"><br><br>
-<hr style="margin-left:15%;" size="5px" color="silver" width="70%">
 </body>
 <footer>
-    <div class="footer-top">
-        <div class="bao_hanh">
-            <a href="" class="content">
-                <h6>Gọi mua hàng: 0379124695 (8h00 - 22h00)</h6>
-            </a>
-            <a href="" class="content">
-                <h6 class="content">Gọi khiếu nại: 0703092742 (8h00 - 21h30)</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Gọi bảo hành: 0342291355 (8h00 - 21h00)</h6>
-            </a><br>
-        </div>
-        <div class="tra_cuu">
-            <a href="https://www.facebook.com/Hangxinhne" class="content">
-                <h6>FB: Trương Thị Thu Hằng</h6>
-            </a>
-            <a href="https://www.facebook.com/phanquixuan.8203/" class="content">
-                <h6>FB: Phan Quí Xuân</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Zalo: 0703092742</h6>
-            </a>
-            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fquixun.8203%3Ffbclid%3DIwAR0B6L6hI29wtDWr276QItVrZEMipDg7a96PhlX8lcDiRGEWEzFKZ7o6DxU&h=AT0JftUehDYl8kGFbwKAmfpibPlRjzpID5401EI31hqE7VNbSQdcTQ1vWMYC921k6oUq7gk0R3jsEkowiymftBB7riFMTMAGX5Vll_g6cbekn1XJoKMhgzDADYYh5gfOAmsy5JUBOkZ_i9onbUeD" class="content">
-                <h6>instagram: Quixun.8203</h6>
-            </a>
-        </div>
-        <div class="quy_che">
-            <a href="" class="content">
-                <h6>Quy chế hoạt động</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Chính sách Bảo hành</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Liên hệ hợp tác kinh doanh</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Đơn doanh nghiệp</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Ưu đãi từ đối tác</h6>
-            </a>
-            <a href="" class="content">
-                <h6>Tuyển dụng</h6>
-            </a>
-        </div>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
     </div>
+    <ul class="social_icon">
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Group</a></li>
+    </ul>
+    <p>&copy;2022 LuvShop | Quí Xun &#126; Thu Hèng</p>
 </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
