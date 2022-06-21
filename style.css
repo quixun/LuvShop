@@ -58,7 +58,7 @@
     height: 60px;
 }
 
-.do_dien_tu {
+.thanh_san_pham {
     padding: 0;
     display: flex;
     justify-content: center;
@@ -66,75 +66,22 @@
     padding: 10px 0;
 }
 
-.do_dien_tu li {
+.thanh_san_pham li {
     position: relative;
     margin-right: 50px;
     list-style: none;
     border-radius: 5px;
 }
 
-.do_dien_tu li a {
+.thanh_san_pham li a {
     border-radius: 4px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-.do_dien_tu li a:hover {
-    color: black;
-}
-
-.laptop {
-    position: absolute;
-    width: 230px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    padding: 5px;
-    visibility: hidden;
-    transition: 0.1s;
-}
-
-.do_dien_tu li:hover .laptop {
-    visibility: visible;
-    top: 30px;
-}
-
-.phu_kien {
-    position: absolute;
-    width: 230px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    padding: 5px;
-    visibility: hidden;
-    transition: 0.1s;
-}
-
-.do_dien_tu li:hover .phu_kien {
-    visibility: visible;
-    top: 30px;
-}
-
-.hang_cu {
-    position: absolute;
-    width: 230px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    padding: 5px;
-    visibility: hidden;
-    transition: 0.1s;
-}
-
-.do_dien_tu li:hover .hang_cu {
-    visibility: visible;
-    top: 30px;
-}
-
-.danh_muc {
-    display: inline;
-}
-
-#usb {
-    transform: rotate(-90deg);
+.thanh_san_pham li a:hover {
+    color: #111;
 }
 
 .container {
@@ -145,12 +92,12 @@
     flex-direction: column;
 
 }
-.gui{
+.gui_button{
     border-radius: 5px;
     width: 50px;
     border: 2px solid rgb(0, 0, 0);
 }
-.gui:hover{
+.gui_button:hover{
     background-color: rgb(36, 208, 17);
     color: #fff;
 }
@@ -344,46 +291,6 @@ ul.products li .product-info a.product-price {
     color: white;
     height: 30px;
     background-color: lightseagreen;
-}
-
-footer {
-    max-width: 1800px;
-    margin: 100px auto 50px 10px;
-    height: auto;
-}
-
-.footer-top {
-    padding: 20px 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-top div {
-    margin-left: 50px;
-}
-
-.bao_hanh a img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-}
-
-.pt_thanhtoan {
-    max-width: 100%;
-}
-
-.content {
-    text-decoration: none;
-    color: #111;
-}
-.content:hover {
-    text-decoration: none;
-    color: red;
-}
-
-h6 {
-    font-size: 12px;
-    margin-top: 4px;
 }
 
 #top-up {
